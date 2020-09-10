@@ -1,14 +1,15 @@
+
+
 .container {
-  margin: 0 auto;
   padding: 20px;
-  width: 1500px;
+  width: 100%;
   height: 160vh;
   text-transform: capitalize;
   font-family: sans-serif;
   color: white;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(4, 1fr) ;
+  grid-template-columns: repeat(4 1fr);
   grid-template-rows: 1fr 2fr 4fr 1fr;
   grid-template-areas: 
   "h h h h"
@@ -26,15 +27,15 @@
   grid-area: h;
   }
 
-.box1{
+.small-box1{
   grid-area: b1;
   }
 
-.box2{
+.small-box2{
   grid-area: b2;
   }
 
-.box3{
+.small-box3{
   grid-area: b3;
   }
   
@@ -54,25 +55,25 @@
 @media (max-width: 600px){
 
 .container{
-
-  margin: 0 auto;
   padding: 10px;
   text-transform: capitalize;
   font-family: sans-serif;
   color: white;
+  height: auto;
   display: grid;
+  width: 100vw;
   grid-gap: 10px;
-  grid-template-columns: repeat(1fr) ;
+  grid-template-columns: 100%;
   grid-template-rows: 1fr 1fr 1fr 1fr 2fr 3fr 1fr;
   grid-template-areas: 
   "h"
   "b1"
   "b2"
   "b3"
-  "m"
   "s"
+  "m"
   "f";
-    }
+}
     
 .container > * {
   background-color: royalblue;
@@ -84,15 +85,15 @@
   grid-area: h;
     }
     
-.box1 {
+.small-box1 {
   grid-area: b1;
       }
     
-.box2 {
+.small-box2 {
   grid-area: b2;
       }
     
-.box3 {
+.small-box3 {
   grid-area: b3;
       }
       
